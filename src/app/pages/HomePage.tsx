@@ -112,37 +112,79 @@ export function HomePage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-green-50 py-20 md:py-28 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <Badge variant="success" className="mb-6 text-sm px-4 py-2">
-              المنصة الرقمية الشاملة لغرفة تجارة دمشق
-            </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
-              نمو أعمالك يبدأ من
-              <span className="text-primary"> هنا</span>
-            </h1>
-            <p className="text-xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto">
-              منصة متكاملة توفر خدمات الغرفة التجارية، التدريب المهني، احتضان المشاريع الناشئة، والمساحات المكتبية في مكان واحد
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link to="/services">
-                <Button size="lg" className="shadow-lg hover:shadow-xl w-full sm:w-auto">
-                  ابدأ الآن
-                  <ArrowLeft className="w-5 h-5 rotate-180" />
-                </Button>
-              </Link>
-              <Link to="/academy">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                  تصفح الدورات التدريبية
-                </Button>
-              </Link>
-            </div>
-          </div>
+     
+	  {/* Traders Intro Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <div>
+        <Badge variant="success" className="mb-4">
+          للتجار ورواد الأعمال
+        </Badge>
+
+        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+          منصة متكاملة لدعم التجار
+          وتطوير الأعمال في سوريا
+        </h2>
+
+        <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+          نوفر للتجار والشركات خدمات رقمية متكاملة تشمل
+          التصديق، الانتساب، المكاتب المرنة،
+          التدريب، والاستشارات التجارية
+          ضمن بيئة احترافية تساعد على النمو والتوسع.
+        </p>
+
+        <div className="flex flex-wrap gap-4">
+          <Link to="/services">
+            <Button size="lg">
+              استكشف الخدمات
+            </Button>
+          </Link>
+
+         
         </div>
-      </section>
+      </div>
+
+      <Card className="border-0 shadow-xl bg-gradient-to-br from-primary/5 to-green-100">
+        <CardContent className="p-10">
+          <div className="space-y-6">
+
+            <div className="flex items-center gap-4">
+              <CheckCircle className="w-6 h-6 text-primary" />
+              <span className="text-lg">
+                خدمات تجارية متكاملة
+              </span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <CheckCircle className="w-6 h-6 text-primary" />
+              <span className="text-lg">
+                مكاتب مرنة وقاعات اجتماعات
+              </span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <CheckCircle className="w-6 h-6 text-primary" />
+              <span className="text-lg">
+                دعم المشاريع الناشئة
+              </span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <CheckCircle className="w-6 h-6 text-primary" />
+              <span className="text-lg">
+                برامج تدريب وتأهيل احترافية
+              </span>
+            </div>
+
+          </div>
+        </CardContent>
+      </Card>
+
+    </div>
+  </div>
+</section>
 	  {/* Gate To Trade Overview */}
 <section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -152,9 +194,15 @@ export function HomePage() {
         Gate to Trade
       </Badge>
 
-      <h2 className="text-3xl md:text-4xl font-bold mb-6">
-        بوابتك نحو التجارة الحديثة
-      </h2>
+<div className="mb-6">
+  <p className="text-primary font-semibold tracking-wider uppercase mb-3">
+    Gate to Trade
+  </p>
+
+  <h2 className="text-4xl md:text-6xl font-extrabold leading-tight">
+    بوابتك نحو التجارة الحديثة
+  </h2>
+</div>
 
       <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
         Gate to Trade هي شركة متخصصة بإدارة المكاتب المرنة
@@ -215,82 +263,37 @@ export function HomePage() {
 
   </div>
 </section>
-{/* Traders Intro Section */}
-<section className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-      <div>
-        <Badge variant="success" className="mb-4">
-          للتجار ورواد الأعمال
-        </Badge>
-
-        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
-          منصة متكاملة لدعم التجار
-          وتطوير الأعمال في سوريا
-        </h2>
-
-        <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-          نوفر للتجار والشركات خدمات رقمية متكاملة تشمل
-          التصديق، الانتساب، المكاتب المرنة،
-          التدريب، والاستشارات التجارية
-          ضمن بيئة احترافية تساعد على النمو والتوسع.
-        </p>
-
-        <div className="flex flex-wrap gap-4">
-          <Link to="/services">
-            <Button size="lg">
-              استكشف الخدمات
-            </Button>
-          </Link>
-
-          <Link to="/gate-to-trade">
-            <Button size="lg" variant="outline">
-              تعرف على Gate to Trade
-            </Button>
-          </Link>
-        </div>
-      </div>
-
-      <Card className="border-0 shadow-xl bg-gradient-to-br from-primary/5 to-green-100">
-        <CardContent className="p-10">
-          <div className="space-y-6">
-
-            <div className="flex items-center gap-4">
-              <CheckCircle className="w-6 h-6 text-primary" />
-              <span className="text-lg">
-                خدمات تجارية متكاملة
-              </span>
+ {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-green-50 via-white to-green-50 py-20 md:py-28 overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <Badge variant="success" className="mb-6 text-sm px-4 py-2">
+              المنصة الرقمية الشاملة لغرفة تجارة دمشق
+            </Badge>
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+              نمو أعمالك يبدأ من
+              <span className="text-primary"> هنا</span>
+            </h1>
+            <p className="text-xl text-muted-foreground mb-10 leading-relaxed max-w-3xl mx-auto">
+              منصة متكاملة توفر خدمات الغرفة التجارية، التدريب المهني، احتضان المشاريع الناشئة، والمساحات المكتبية في مكان واحد
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link to="/services">
+                <Button size="lg" className="shadow-lg hover:shadow-xl w-full sm:w-auto">
+                  ابدأ الآن
+                  <ArrowLeft className="w-5 h-5 rotate-180" />
+                </Button>
+              </Link>
+              <Link to="/academy">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto">
+                  تصفح الدورات التدريبية
+                </Button>
+              </Link>
             </div>
-
-            <div className="flex items-center gap-4">
-              <CheckCircle className="w-6 h-6 text-primary" />
-              <span className="text-lg">
-                مكاتب مرنة وقاعات اجتماعات
-              </span>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <CheckCircle className="w-6 h-6 text-primary" />
-              <span className="text-lg">
-                دعم المشاريع الناشئة
-              </span>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <CheckCircle className="w-6 h-6 text-primary" />
-              <span className="text-lg">
-                برامج تدريب وتأهيل احترافية
-              </span>
-            </div>
-
           </div>
-        </CardContent>
-      </Card>
-
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
       {/* Stats Section */}
       <section className="py-16 bg-white border-y border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
