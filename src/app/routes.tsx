@@ -11,7 +11,7 @@ import { JobsPage } from "./pages/JobsPage";
 import { UserDashboard } from "./pages/UserDashboard";
 import { AdminDashboard } from "./pages/AdminDashboard";
 import { NotFound } from "./pages/NotFound";
-
+import { GateToTradePage } from './pages/GateToTradePage';
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +28,10 @@ export const router = createBrowserRouter([
       { path: "dashboard", Component: UserDashboard },
       { path: "admin", Component: AdminDashboard },
       { path: "*", Component: NotFound },
+	  {
+  path: '/gate-to-trade',
+  element: <GateToTradePage />,
+},
     ],
   },
 ]);

@@ -16,6 +16,7 @@ export function Navbar() {
     { label: 'المساحات المكتبية', path: '/coworking' },
     { label: 'ذوي الهمم', path: '/inclusion' },
     { label: 'الوظائف', path: '/jobs' },
+	{ label: 'Gate to Trade', path: '/gate-to-trade' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
